@@ -1,0 +1,114 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden; /* Prevents Horizontal scrollbars*/
+}
+body {
+  background-color: #f4f4f4;
+}
+
+/****Header_Nav Code*/
+.header_nav {
+  width: 100%;
+  color: #fff;
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  display: grid;
+}
+
+.header_flex {
+  display: grid;
+  grid-template-columns: 1.2fr 1.7fr 0.3fr 0.2fr;
+}
+
+.header_right,
+.header_center_nav,
+.header_left_menu {
+  display: flex;
+}
+
+.header_left_menu img,
+.header_right img,
+.header_center_nav img,
+.header_nav_end img {
+  width: 24px;
+  margin-left: 8px;
+}
+
+.header_right_menu h2 {
+  position: flex;
+  bottom: 0;
+}
+
+/****Header_Nav_Right Code*/
+.profile_nav {
+  display: block;
+}
+.user_nav_pic {
+  vertical-align: middle;
+  width: 50%;
+  height: 50px;
+  border-radius: 50%;
+}
+.logout {
+  position: fixed;
+  right: 0;
+}
+
+.bottom_nav {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #000;
+}
+.bottom_nav_container {
+  display: inline-block;
+}
+
+.bottom_nav a {
+  display: block;
+  text-decoration: none;
+}
+
+.bottom_nav_container {
+  display: inline-block;
+}
+
+.header_center_search {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  padding: 5px;
+  transition: width 0.4s ease;
+  width: 40px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.top_searhbar {
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  transition: width 0.4s ease;
+}
+
+.search_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.header_center_nav.expanded {
+  width: 300px;
+}
+
+.search_btn:hover {
+  transform: scale(1.1);
+}
